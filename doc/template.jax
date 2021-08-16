@@ -110,7 +110,7 @@ template.vim には、特定の文字列を置換するような機能はあり�
 	  %s/<+DATE+>/\=strftime('%Y-%m-%d')/g
 	  " And more...
 	endfunction
-
+<
 <%= %> の中身をvimで評価して展開する: >
 	autocmd User plugin-template-loaded
 	\ silent %s/<%=\(.\{-}\)%>/\=eval(submatch(1))/ge

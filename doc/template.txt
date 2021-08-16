@@ -115,7 +115,7 @@ Defines replacing keywords: >
 	  %s/<+DATE+>/\=strftime('%Y-%m-%d')/g
 	  " And more...
 	endfunction
-
+<
 Evaluate by vim and expand the inside of <%= %>: >
 	autocmd User plugin-template-loaded
 	\ silent %s/<%=\(.\{-}\)%>/\=eval(submatch(1))/ge
